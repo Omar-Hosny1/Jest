@@ -58,3 +58,12 @@ it("Should be larger than 1", () => {
 it("Should be in between than 10 To 100", () => {
     expect(15).toBeBetween(10, 100)
 })
+
+// valid if the value is anything except null or undefiend
+test("Expect Anything", () => {
+    expect("Omar").toEqual(expect.anything())
+})
+
+test("Expect Any Constructor", () => {
+    expect("Omar").toEqual(expect.any(String))
+})
